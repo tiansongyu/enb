@@ -1,0 +1,22 @@
+#! /bin/bash
+#cd /home/oai/trunk/targets   
+cd ../..
+tar zcvf enb20`date +'%02y%02m%02d'`.tar.z  enb\
+ --exclude enb/targets/bin\
+ --exclude enb/si\
+ --exclude enb/.git\
+ --exclude enb/cmake_targets/log\
+ --exclude enb/cmake_targets/lte_build_oai/build\
+ --exclude enb/cmake_targets/nas_sim_tools/build\
+ --exclude enb/cmake_targets/rrh_gw/build\
+ --exclude *.*o\
+ --exclude *.*a\
+ --exclude *.m\
+ --exclude *.mat\
+ --exclude *.csv\
+ --exclude *.gif\
+ --exclude *.jpg\
+ --exclude *.png\
+ --exclude *.log\
+ --exclude *.so.*\
+ --exclude *.tar
